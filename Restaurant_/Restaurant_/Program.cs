@@ -2,9 +2,11 @@
 {
     internal class Program
     {
+        delegate void RestaurantEvent();
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Restaurant restaurant = new Restaurant();
+            restaurant.Start();
         }
     }
 }
